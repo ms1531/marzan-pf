@@ -4,63 +4,56 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Marzan Kabir — Digital Creator & Meta Platform Support</title>
-<meta name="description" content="Marzan Kabir — Digital Creator & Meta Platform Support at Black Panther Cyber Space (BPCS). Social account recovery, verification, brand protection & premium stock assets." />
+<meta name="description" content="Marzan Kabir — Digital Creator & Meta Platform Support specialist at Black Panther Cyber Space (BPCS). Social account recovery, verification, brand protection & premium stock assets." />
 <link rel="icon" href="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/brand-logo-yJQ6TJhe950hv99GxmwHxZikdvQevk.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 <style>
 :root{
-  --bg:#05060f; --bg2:#0a0d1f;
-  --card:rgba(255,255,255,.04); --line:rgba(255,255,255,.09);
-  --txt:#eef1ff; --mut:#9aa3c7;
-  --cy:#22d3ee; --vi:#a855f7; --pk:#f472b6;
-  --grad:linear-gradient(120deg,var(--cy),var(--vi) 55%,var(--pk));
+ --bg:#04050d;--bg2:#090b1a;
+ --card:rgba(255,255,255,.045);--line:rgba(255,255,255,.1);
+ --txt:#eef1ff;--mut:#98a2c8;
+ --cy:#22d3ee;--vi:#a855f7;--pk:#f472b6;
+ --grad:linear-gradient(120deg,var(--cy),var(--vi) 55%,var(--pk));
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--txt);font-family:'Inter',sans-serif;line-height:1.6;overflow-x:hidden}
+body{background:var(--bg);color:var(--txt);font-family:'Inter',sans-serif;line-height:1.65;overflow-x:hidden}
 h1,h2,h3,.brand{font-family:'Sora',sans-serif}
 ::selection{background:var(--vi);color:#fff}
+img{max-width:100%}
 
-/* ============ BACKDROP: drifting orbs (no blur filter = light) ============ */
+/* ===== BACKDROP ===== */
 .sky{position:fixed;inset:0;z-index:-2;overflow:hidden;background:var(--bg)}
 .sky::before{content:"";position:absolute;inset:0;
- background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
- background-size:56px 56px;mask-image:radial-gradient(ellipse at top,black 30%,transparent 75%)}
+ background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);
+ background-size:58px 58px;mask-image:radial-gradient(ellipse at 50% 0,black 25%,transparent 78%)}
 .orb{position:absolute;border-radius:50%;pointer-events:none;will-change:transform}
-.o1{width:60vmax;height:60vmax;top:-25vmax;right:-15vmax;background:radial-gradient(circle at 35% 35%,rgba(168,85,247,.17),transparent 60%);animation:drift1 26s ease-in-out infinite alternate}
-.o2{width:50vmax;height:50vmax;top:5vmax;left:-20vmax;background:radial-gradient(circle at 60% 40%,rgba(34,211,238,.14),transparent 60%);animation:drift2 32s ease-in-out infinite alternate}
-.o3{width:55vmax;height:55vmax;bottom:-30vmax;left:25vw;background:radial-gradient(circle at 50% 50%,rgba(244,114,182,.12),transparent 60%);animation:drift3 38s ease-in-out infinite alternate}
-@keyframes drift1{to{transform:translate(-7vmax,9vmax) scale(1.08)}}
-@keyframes drift2{to{transform:translate(9vmax,10vmax) scale(1.12)}}
-@keyframes drift3{to{transform:translate(-8vmax,-9vmax) scale(1.06)}}
+.o1{width:58vmax;height:58vmax;top:-24vmax;right:-14vmax;background:radial-gradient(circle at 35% 35%,rgba(168,85,247,.16),transparent 62%);animation:d1 26s ease-in-out infinite alternate}
+.o2{width:48vmax;height:48vmax;top:6vmax;left:-18vmax;background:radial-gradient(circle at 60% 40%,rgba(34,211,238,.13),transparent 62%);animation:d2 32s ease-in-out infinite alternate}
+.o3{width:52vmax;height:52vmax;bottom:-28vmax;left:24vw;background:radial-gradient(circle at 50% 50%,rgba(244,114,182,.11),transparent 62%);animation:d3 38s ease-in-out infinite alternate}
+@keyframes d1{to{transform:translate(-7vmax,9vmax) scale(1.07)}}
+@keyframes d2{to{transform:translate(9vmax,10vmax) scale(1.1)}}
+@keyframes d3{to{transform:translate(-8vmax,-9vmax) scale(1.05)}}
+#prog{position:fixed;top:0;left:0;height:3px;width:0;background:var(--grad);z-index:99}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
 
-/* scroll progress */
-#prog{position:fixed;top:0;left:0;height:3px;width:0;background:var(--grad);z-index:99;border-radius:0 3px 3px 0}
-
-.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
-
-/* ============ NAV ============ */
-nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(14px);background:rgba(5,6,15,.6);border-bottom:1px solid var(--line)}
-.nav-in{max-width:1160px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.05rem;letter-spacing:.3px}
-.brand img{width:38px;height:38px;border-radius:11px;object-fit:cover;animation:logoPulse 4s ease-in-out infinite}
-@keyframes logoPulse{0%,100%{box-shadow:0 0 0 0 rgba(34,211,238,.4)}50%{box-shadow:0 0 16px 3px rgba(168,85,247,.5)}}
-.brand:hover img{animation-play-state:paused;transform:rotate(-8deg) scale(1.1);transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
-.brand span{background:var(--grad);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:gradShift 6s linear infinite}
-@keyframes gradShift{to{background-position:200% 0}}
-.links{display:flex;gap:26px;list-style:none}
-.links a{color:var(--mut);text-decoration:none;font-size:.92rem;font-weight:500;transition:.25s;position:relative}
+/* ===== NAV ===== */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(16px);background:rgba(4,5,13,.62);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1140px;margin:0 auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.02rem;text-decoration:none;color:var(--txt)}
+.brand img{width:36px;height:36px;border-radius:10px;object-fit:cover;animation:lgPulse 4s ease-in-out infinite}
+@keyframes lgPulse{0%,100%{box-shadow:0 0 0 0 rgba(34,211,238,.35)}50%{box-shadow:0 0 15px 3px rgba(168,85,247,.45)}}
+.brand:hover img{transform:rotate(-8deg) scale(1.1);transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
+.links{display:flex;gap:24px;list-style:none}
+.links a{color:var(--mut);text-decoration:none;font-size:.9rem;font-weight:500;position:relative;transition:color .25s}
 .links a::after{content:"";position:absolute;left:0;right:100%;bottom:-4px;height:2px;background:var(--grad);border-radius:2px;transition:right .3s}
 .links a:hover::after,.links a.on::after{right:0}
 .links a:hover,.links a.on{color:var(--txt)}
-
-/* ============ BUTTONS ============ */
-.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:12px;border:0;cursor:pointer;font-weight:600;font-size:.92rem;text-decoration:none;transition:transform .25s,box-shadow .25s,border-color .25s;position:relative;overflow:hidden}
-.btn-p{background:var(--grad);color:#fff;box-shadow:0 8px 28px rgba(140,90,230,.35)}
-.btn-p::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);animation:shine 3.5s ease-in-out infinite}
-@keyframes shine{0%,55%{left:-60%}100%{left:135%}}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:12px;border:0;cursor:pointer;font-weight:600;font-size:.9rem;text-decoration:none;transition:transform .25s,box-shadow .25s,border-color .25s;position:relative;overflow:hidden}
+.btn-p{background:var(--grad);background-size:200% 100%;color:#fff;box-shadow:0 8px 28px rgba(140,90,230,.32);animation:gFlow 6s linear infinite}
+@keyframes gFlow{to{background-position:200% 0}}
 .btn-p:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(140,90,230,.5)}
 .btn-g{background:var(--card);color:var(--txt);border:1px solid var(--line)}
 .btn-g:hover{border-color:rgba(34,211,238,.5);transform:translateY(-2px)}
@@ -70,156 +63,159 @@ nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(14px);ba
 .burger.x span:nth-child(2){opacity:0}
 .burger.x span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
-/* ============ LOGO BOX SYSTEM (uniform size everywhere) ============ */
-.logo-box{position:relative;width:64px;height:64px;padding:13px;border-radius:18px;display:grid;place-items:center;overflow:hidden;
- background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.02));
- border:1px solid var(--line);
- animation:lgFloat 6s ease-in-out infinite, lgGlow 5s ease-in-out infinite;
- will-change:transform}
-.logo-box img{width:100%;height:100%;object-fit:contain;transition:transform .45s cubic-bezier(.34,1.56,.64,1)}
-.logo-box::before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.16) 50%,transparent 70%);transform:translateX(-130%);transition:transform .6s ease}
-.logo-box:hover::before{transform:translateX(130%)}
-.logo-box:hover{animation-play-state:paused}
-.logo-box:hover img{transform:scale(1.18) rotate(-8deg)}
-.logo-box.sm{width:56px;height:56px;padding:11px;border-radius:15px}
-@keyframes lgFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
-@keyframes lgGlow{0%,100%{box-shadow:0 0 0 0 rgba(34,211,238,0)}50%{box-shadow:0 0 22px 2px rgba(34,211,238,.22)}}
-/* staggered idle delays (multi-phase motion) */
-.st2{animation-delay:-1.2s,-1.2s}.st3{animation-delay:-2.4s,-2.4s}
-.st4{animation-delay:-3.6s,-3.6s}.st5{animation-delay:-4.8s,-4.8s}
-.st6{animation-delay:-2.1s,-2.1s}
+/* ===== HERO ===== */
+.hero{padding:150px 0 80px;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--mut);font-size:.8rem;font-weight:600}
+.pill .dot{width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 10px #34d399;animation:bl 2s infinite}
+@keyframes bl{50%{opacity:.35}}
+.hero h1{font-size:clamp(2.3rem,5vw,3.9rem);font-weight:800;line-height:1.12;margin:20px 0 10px}
+.gtx{background:var(--grad);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:gFlow 6s linear infinite}
+.role{font-family:'Sora';font-weight:600;font-size:clamp(.98rem,1.9vw,1.22rem);min-height:1.7em;color:var(--txt)}
+.role .cur{display:inline-block;width:2px;height:1.02em;background:var(--cy);vertical-align:-2px;margin-left:3px;animation:bl 1s steps(1) infinite}
+.hero .lead{color:var(--mut);font-size:1.03rem;max-width:520px;margin:14px 0 28px}
+.hero .lead b{color:var(--txt)}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.trust{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+.trust i{font-style:normal;display:inline-flex;align-items:center;gap:6px;font-size:.74rem;font-weight:600;color:var(--mut);background:var(--card);border:1px solid var(--line);padding:5px 12px;border-radius:99px}
+.trust i::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--cy);box-shadow:0 0 8px var(--cy)}
 
-/* ============ HERO ============ */
-.hero{padding:150px 0 90px;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
-.pill{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--mut);font-size:.82rem;font-weight:600}
-.pill .dot{width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 10px #34d399;animation:pulse 2s infinite}
-@keyframes pulse{50%{opacity:.4}}
-.hero h1{font-size:clamp(2.4rem,5.2vw,4rem);font-weight:800;line-height:1.12;margin:22px 0 8px}
-.grad-txt{background:var(--grad);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:gradShift 6s linear infinite}
-.typed-wrap{font-family:'Sora';font-size:clamp(1rem,2vw,1.3rem);font-weight:600;min-height:1.6em;margin:6px 0 4px}
-.typed-wrap .cur{display:inline-block;width:2px;height:1.05em;background:var(--cy);vertical-align:-2px;margin-left:3px;animation:pulse 1s steps(1) infinite}
-.hero p.lead{color:var(--mut);font-size:1.06rem;max-width:520px;margin:16px 0 30px}
-.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
-.stats{display:flex;gap:38px;margin-top:44px;flex-wrap:wrap}
-.stats b{font-family:'Sora';font-size:1.5rem;display:block}
-.stats span{color:var(--mut);font-size:.82rem}
-.photo-card{position:relative;justify-self:center;transition:transform .5s ease}
-.photo-card:hover{transform:perspective(800px) rotateX(2deg) rotateY(-3deg) scale(1.015)}
-.photo-card::before{content:"";position:absolute;inset:-28px;background:var(--grad);filter:blur(70px);opacity:.45;border-radius:50%;z-index:-1;animation:haloBreath 7s ease-in-out infinite}
-@keyframes haloBreath{0%,100%{opacity:.35;transform:scale(1)}50%{opacity:.55;transform:scale(1.06)}}
-.photo-card img{width:min(380px,80vw);border-radius:26px;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.55)}
-.float-tag{position:absolute;padding:10px 16px;border-radius:14px;background:rgba(10,13,31,.85);backdrop-filter:blur(10px);border:1px solid var(--line);font-size:.8rem;font-weight:600;display:flex;gap:8px;align-items:center;animation:bob 5s ease-in-out infinite}
-.float-tag img{width:20px;height:20px;object-fit:contain;border-radius:4px}
-.ft1{top:20px;left:-38px;animation-delay:.5s}
-.ft2{bottom:34px;right:-30px}
-@keyframes bob{50%{transform:translateY(-10px)}}
+/* hero photo with rotating holographic ring */
+.avatar{position:relative;justify-self:center;width:min(360px,78vw);aspect-ratio:1;border-radius:50%;display:grid;place-items:center}
+.avatar::before{content:"";position:absolute;inset:-4px;border-radius:50%;
+ background:conic-gradient(from 0deg,var(--cy),transparent 30%,var(--vi) 50%,transparent 78%,var(--pk) 92%,var(--cy));
+ animation:spin 9s linear infinite;
+ -webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 2px));
+ mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 2px))}
+.avatar::after{content:"";position:absolute;inset:-34px;border-radius:50%;background:var(--grad);filter:blur(64px);opacity:.38;z-index:-1;animation:brth 7s ease-in-out infinite}
+@keyframes brth{0%,100%{opacity:.28;transform:scale(1)}50%{opacity:.5;transform:scale(1.06)}}
+@keyframes spin{to{transform:rotate(1turn)}}
+.avatar img{width:calc(100% - 20px);aspect-ratio:1;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.08)}
+.ftag{position:absolute;display:flex;align-items:center;gap:8px;padding:9px 14px;border-radius:14px;background:rgba(9,11,26,.88);backdrop-filter:blur(10px);border:1px solid var(--line);font-size:.76rem;font-weight:600;animation:bob 5s ease-in-out infinite}
+.ftag img{width:18px;height:18px;object-fit:contain}
+.f1{top:6%;left:-34px;animation-delay:.4s}
+.f2{bottom:8%;right:-30px}
+@keyframes bob{50%{transform:translateY(-9px)}}
 
-/* ============ SECTIONS ============ */
-section{padding:90px 0}
-.sec-head{text-align:center;max-width:640px;margin:0 auto 54px}
-.sec-head h2{font-size:clamp(1.8rem,3.4vw,2.5rem);font-weight:800}
-.sec-head p{color:var(--mut);margin-top:10px}
+/* ===== SECTIONS ===== */
+section{padding:84px 0}
+.head{text-align:center;max-width:620px;margin:0 auto 48px}
+.head h2{font-size:clamp(1.7rem,3.2vw,2.4rem);font-weight:800}
+.head p{color:var(--mut);margin-top:8px;font-size:.95rem}
 
-/* bento services */
-.bento{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.b-card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;overflow:hidden;transition:transform .35s,border-color .35s}
-.b-card:hover{border-color:rgba(34,211,238,.45);transform:perspective(700px) rotateX(2deg) translateY(-5px)}
-.b-card::after{content:"";position:absolute;top:-40%;right:-40%;width:60%;aspect-ratio:1;background:var(--grad);filter:blur(60px);opacity:0;transition:.4s}
-.b-card:hover::after{opacity:.18}
-.b-card.big{grid-column:span 3;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:24px}
-.b-card h3{font-size:1.12rem;margin:14px 0 8px}
-.b-card p{color:var(--mut);font-size:.9rem}
+/* ===== NEXT-GEN LOGO SHOWCASE ===== */
+.plats{display:flex;justify-content:center;gap:clamp(14px,4vw,44px);flex-wrap:wrap}
+.pf{text-align:center;text-decoration:none;color:var(--txt)}
+.pf .ring{position:relative;width:clamp(84px,12vw,112px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;margin:0 auto 12px;transition:transform .45s cubic-bezier(.34,1.56,.64,1)}
+.pf .ring::before{content:"";position:absolute;inset:-3px;border-radius:50%;
+ background:conic-gradient(from 0deg,var(--cy),transparent 28%,var(--vi) 48%,transparent 74%,var(--pk) 90%,var(--cy));
+ animation:spin 7s linear infinite;
+ -webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 2px));
+ mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 2px))}
+.pf .ring::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--card);border:1px solid var(--line);backdrop-filter:blur(8px)}
+.pf .ring img{position:relative;z-index:1;width:46%;aspect-ratio:1;object-fit:contain;filter:drop-shadow(0 4px 14px rgba(34,211,238,.35));transition:transform .45s cubic-bezier(.34,1.56,.64,1)}
+.pf .ring{animation:orbFloat 5.5s ease-in-out infinite}
+.pf:nth-child(2) .ring{animation-delay:-1.1s}
+.pf:nth-child(3) .ring{animation-delay:-2.2s}
+.pf:nth-child(4) .ring{animation-delay:-3.3s}
+.pf:nth-child(5) .ring{animation-delay:-4.4s}
+@keyframes orbFloat{0%,100%{translate:0 0}50%{translate:0 -8px}}
+.pf:hover .ring{transform:scale(1.12)}
+.pf:hover .ring img{transform:rotate(-10deg) scale(1.12)}
+.pf b{font-size:.85rem;font-weight:600}
+.pf:hover b{color:var(--cy)}
+
+/* ===== SERVICES BENTO ===== */
+.bento{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.bc{position:relative;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;overflow:hidden;transition:transform .35s,border-color .35s}
+.bc:hover{border-color:rgba(34,211,238,.45);transform:translateY(-5px)}
+.bc::after{content:"";position:absolute;top:-45%;right:-45%;width:65%;aspect-ratio:1;background:var(--grad);filter:blur(64px);opacity:0;transition:.4s}
+.bc:hover::after{opacity:.16}
+.bc.wide{grid-column:span 3;display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center}
+.lg{width:60px;height:60px;padding:12px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid var(--line);margin-bottom:14px;animation:lgF 6s ease-in-out infinite}
+.bc:nth-child(2) .lg{animation-delay:-1.5s}.bc:nth-child(3) .lg{animation-delay:-3s}.bc:nth-child(4) .lg{animation-delay:-4.5s}
+@keyframes lgF{0%,100%{transform:translateY(0);box-shadow:0 0 0 0 rgba(34,211,238,0)}50%{transform:translateY(-5px);box-shadow:0 0 18px 2px rgba(34,211,238,.18)}}
+.lg img{width:100%;height:100%;object-fit:contain;transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
+.bc:hover .lg img{transform:scale(1.15) rotate(-6deg)}
+.bc h3{font-size:1.08rem;margin-bottom:7px}
+.bc p{color:var(--mut);font-size:.88rem}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-.chips i{font-style:normal;font-size:.76rem;font-weight:600;color:var(--cy);background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.25);padding:4px 12px;border-radius:99px;transition:.3s}
+.chips i{font-style:normal;font-size:.73rem;font-weight:600;color:var(--cy);background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.25);padding:4px 12px;border-radius:99px;transition:.3s}
 .chips i:hover{background:rgba(34,211,238,.2);transform:translateY(-2px)}
 
-/* skills */
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px}
-.sk{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px 16px;text-align:center;transition:transform .3s,border-color .3s}
-.sk:hover{transform:translateY(-6px) scale(1.03);border-color:rgba(168,85,247,.5)}
-.sk .logo-box{margin:0 auto 14px}
-.sk b{display:block;font-size:.92rem}
+/* ===== SKILLS ===== */
+.skl{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px}
+.sk{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 14px;text-align:center;transition:transform .3s,border-color .3s}
+.sk:hover{transform:translateY(-5px);border-color:rgba(168,85,247,.5)}
+.sk .lg{margin:0 auto 12px;width:50px;height:50px;padding:10px;border-radius:13px}
+.sk b{font-size:.86rem}
 
-/* assets gallery */
-.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.g-item{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3}
-.g-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
-.g-item:hover img{transform:scale(1.09) rotate(.6deg)}
-.g-item .cap{position:absolute;inset:auto 0 0 0;padding:14px;font-size:.85rem;font-weight:600;background:linear-gradient(transparent,rgba(5,6,15,.92));transform:translateY(6px);opacity:.92;transition:.35s}
-.g-item:hover .cap{transform:none;opacity:1}
-.g-item.wide{grid-column:span 2}
+/* ===== GALLERY ===== */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gi{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.gi:hover img{transform:scale(1.09) rotate(.6deg)}
+.gi .cap{position:absolute;inset:auto 0 0 0;padding:13px;font-size:.82rem;font-weight:600;background:linear-gradient(transparent,rgba(4,5,13,.94))}
+.gi.w2{grid-column:span 2}
 
-/* journey */
-.tl{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
-.j-card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:transform .35s,border-color .35s}
-.j-card:hover{transform:perspective(700px) rotateX(3deg) translateY(-7px);border-color:rgba(244,114,182,.5)}
-.j-card img{width:100%;aspect-ratio:16/10;object-fit:cover}
-.j-card .j-body{padding:16px}
-.j-card b{display:block;font-size:.95rem;margin-bottom:6px}
-.j-card span{color:var(--mut);font-size:.8rem}
+/* ===== JOURNEY ===== */
+.jr{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.jc{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .35s,border-color .35s}
+.jc:hover{transform:translateY(-6px);border-color:rgba(244,114,182,.45)}
+.jc img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.jc .jb{padding:14px}
+.jc b{display:block;font-size:.92rem;margin-bottom:5px}
+.jc span{color:var(--mut);font-size:.78rem}
 
-/* contact */
-.contact{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.c-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.c-grid h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:800}
-.c-grid p{color:var(--mut);margin:14px 0 28px}
-.c-list{display:grid;gap:14px}
-.c-item{display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 20px;text-decoration:none;color:var(--txt);transition:transform .3s,border-color .3s}
-.c-item:hover{border-color:rgba(34,211,238,.5);transform:translateX(6px)}
-.c-item .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(34,211,238,.1);font-size:1.2rem;flex:none;transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
-.c-item:hover .ic{transform:rotate(-10deg) scale(1.15)}
-.c-item small{display:block;color:var(--mut)}
-.c-item b{font-size:.95rem}
+/* ===== CONTACT ===== */
+.ct{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.cg h2{font-size:clamp(1.7rem,3.2vw,2.5rem);font-weight:800}
+.cg>p{color:var(--mut);margin:12px 0 26px}
+.cl{display:grid;gap:12px}
+.ci{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:15px;padding:14px 18px;text-decoration:none;color:var(--txt);transition:transform .3s,border-color .3s}
+.ci:hover{border-color:rgba(34,211,238,.5);transform:translateX(6px)}
+.ci .ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:rgba(34,211,238,.1);font-size:1.15rem;flex:none;transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
+.ci:hover .ic{transform:rotate(-10deg) scale(1.15)}
+.ci small{display:block;color:var(--mut);font-size:.75rem}
+.ci b{font-size:.92rem}
 
-footer{padding:34px 0;text-align:center;color:var(--mut);font-size:.85rem}
+footer{padding:30px 0;text-align:center;color:var(--mut);font-size:.84rem}
 footer a{color:var(--cy);text-decoration:none}
 
-/* ============ SYS-1: entrance reveal ============ */
-.rv{opacity:0;transform:translateY(28px) scale(.985);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.3,1);will-change:transform,opacity}
+/* reveal */
+.rv{opacity:0;transform:translateY(26px) scale(.985);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.3,1)}
 .rv.in{opacity:1;transform:none}
 
-/* ============ ACCESSIBILITY: reduce motion ============ */
-@media (prefers-reduced-motion:reduce){
- *,*::before,*::after{animation:none!important;transition:none!important}
- .rv{opacity:1;transform:none}
-}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 
 @media(max-width:920px){
- .links{position:fixed;inset:64px 0 auto 0;flex-direction:column;gap:0;background:rgba(5,6,15,.97);border-bottom:1px solid var(--line);padding:12px 0;display:none}
- .links.open{display:flex}
- .links a{padding:13px 28px}
+ .links{position:fixed;inset:60px 0 auto 0;flex-direction:column;gap:0;background:rgba(4,5,13,.97);border-bottom:1px solid var(--line);padding:10px 0;display:none}
+ .links.open{display:flex}.links a{padding:13px 26px}
  .burger{display:block}
- .hero{grid-template-columns:1fr;padding-top:120px;text-align:center}
- .hero p.lead{margin-inline:auto}
- .hero-cta,.stats{justify-content:center}
- .photo-card::before{display:none}
+ .hero{grid-template-columns:1fr;padding-top:120px;text-align:center;gap:44px}
+ .hero .lead{margin-inline:auto}.cta,.trust{justify-content:center}
+ .avatar{margin-top:8px}
  .bento{grid-template-columns:1fr 1fr}
- .b-card.big{grid-column:span 2;grid-template-columns:1fr}
- .gal{grid-template-columns:repeat(2,1fr)}
- .g-item.wide{grid-column:span 2}
- .tl{grid-template-columns:repeat(2,1fr)}
- .c-grid{grid-template-columns:1fr}
+ .bc.wide{grid-column:span 2;grid-template-columns:1fr}
+ .gal{grid-template-columns:repeat(2,1fr)}.gi.w2{grid-column:span 2}
+ .jr{grid-template-columns:repeat(2,1fr)}
+ .cg{grid-template-columns:1fr}
 }
-@media(max-width:520px){
- .bento{grid-template-columns:1fr}
- .b-card.big{grid-column:span 1}
- .tl{grid-template-columns:1fr}
-}
+@media(max-width:520px){.bento{grid-template-columns:1fr}.bc.wide{grid-column:span 1}.jr{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="sky"><div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div></div>
 <div id="prog"></div>
 
-<!-- NAV -->
 <nav>
  <div class="nav-in">
-  <a class="brand" href="#home"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/brand-logo-yJQ6TJhe950hv99GxmwHxZikdvQevk.png" alt="logo" decoding="async" />Marzan <span>Kabir</span></a>
+  <a class="brand" href="#home"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/brand-logo-yJQ6TJhe950hv99GxmwHxZikdvQevk.png" alt="BPCS logo" />Marzan <span style="background:var(--grad);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:gFlow 6s linear infinite">Kabir</span></a>
   <ul class="links" id="navLinks">
    <li><a href="#home">Home</a></li>
+   <li><a href="#platforms">Platforms</a></li>
    <li><a href="#services">Services</a></li>
    <li><a href="#assets">Assets</a></li>
-   <li><a href="#journey">Journey</a></li>
    <li><a href="#contact">Contact</a></li>
   </ul>
   <a class="btn btn-p" href="#contact">Hire Me</a>
@@ -227,116 +223,123 @@ footer a{color:var(--cy);text-decoration:none}
  </div>
 </nav>
 
-<!-- HERO -->
 <header class="hero wrap" id="home">
  <div>
-  <span class="pill"><span class="dot"></span> Available for new cases · Rangpur, BD</span>
-  <h1>Marzan <span class="grad-txt">Kabir</span></h1>
-  <div class="typed-wrap">I'm a <span id="typed"></span><span class="cur"></span></div>
-  <p class="lead">Meta Platform Support specialist at <b>Black Panther Cyber Space (BPCS)</b> — helping people recover, verify and protect their accounts on Facebook, Instagram, YouTube &amp; X, plus crafting premium vector &amp; motion assets.</p>
-  <div class="hero-cta">
+  <span class="pill"><span class="dot"></span> Available for new cases · Rangpur, Bangladesh</span>
+  <h1>Marzan <span class="gtx">Kabir</span></h1>
+  <div class="role">I'm a <span id="typed"></span><span class="cur"></span></div>
+  <p class="lead"><b>Meta Platform Support</b> specialist at <b>Black Panther Cyber Space (BPCS)</b> — official guidance for account recovery, verification and brand protection across Facebook, Instagram, YouTube &amp; X, plus premium vector &amp; motion assets.</p>
+  <div class="cta">
    <a class="btn btn-p" href="https://wa.me/8801318040178?text=Hi%20Marzan%2C%20I%20found%20your%20portfolio%20and%20I" target="_blank" rel="noopener">💬 WhatsApp Me</a>
    <a class="btn btn-g" href="#services">Explore Services</a>
   </div>
-  <div class="stats">
-   <div><b class="grad-txt" data-count="4" data-suffix="+">4+</b><span>Years Experience</span></div>
-   <div><b class="grad-txt" data-count="1.5" data-suffix="K+">1.5K+</b><span>Cases Handled</span></div>
-   <div><b class="grad-txt" data-count="250" data-suffix="+">250+</b><span>Asset Packs Delivered</span></div>
+  <div class="trust">
+   <i>Official appeal routes only</i>
+   <i>Step-by-step guidance</i>
+   <i>Confidential &amp; secure</i>
   </div>
  </div>
- <div class="photo-card">
+ <div class="avatar">
   <img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/marzan-kabir-GGjkmq9U6l040Cq6PoRgpZ0mArzq5t.jpg" alt="Marzan Kabir" decoding="async" />
-  <div class="float-tag ft1"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/badge-verified-1pw3KRGPUKnjUIryxGilnoUtsnee7w.png" alt="" loading="lazy" decoding="async" />Meta Verified Expert</div>
-  <div class="float-tag ft2"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-meta-1vMHUCgUwCd83zALjUvrG39r7OlyHt.png" alt="" loading="lazy" decoding="async" />Account Recovery Pro</div>
+  <div class="ftag f1"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/badge-verified-1pw3KRGPUKnjUIryxGilnoUtsnee7w.png" alt="" loading="lazy" />Meta Verified Expert</div>
+  <div class="ftag f2"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-meta-1vMHUCgUwCd83zALjUvrG39r7OlyHt.png" alt="" loading="lazy" />Account Recovery Pro</div>
  </div>
 </header>
 
-<!-- SERVICES -->
-<section id="services">
+<section id="platforms">
  <div class="wrap">
-  <div class="sec-head rv"><h2>What I <span class="grad-txt">Do</span></h2><p>End-to-end Meta platform support — recovery, verification, brand protection and content production.</p></div>
+  <div class="head rv"><h2>Platforms I <span class="gtx">Support</span></h2><p>Recovery, verification, appeals and brand protection — every official route.</p></div>
+  <div class="plats rv">
+   <a class="pf" href="#services"><span class="ring"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-facebook-xDFOrxPopIfL71jUgPFo1ZIr0DO6Hj.png" alt="Facebook" loading="lazy" /></span><b>Facebook</b></a>
+   <a class="pf" href="#services"><span class="ring"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-instagram-EMmuVnRvoXGVAJTy4HCo7WwxnkPhre.png" alt="Instagram" loading="lazy" /></span><b>Instagram</b></a>
+   <a class="pf" href="#services"><span class="ring"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-youtube-r0yitb0bRI6n6Rn74tn3QU6enyk6Tu.png" alt="YouTube" loading="lazy" /></span><b>YouTube</b></a>
+   <a class="pf" href="#services"><span class="ring"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-x-KI3cRVIxfnSUp2uVTcmspEvosxCrKN.png" alt="X" loading="lazy" /></span><b>X (Twitter)</b></a>
+   <a class="pf" href="#services"><span class="ring"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-meta-1vMHUCgUwCd83zALjUvrG39r7OlyHt.png" alt="Meta" loading="lazy" /></span><b>Meta Verified</b></a>
+  </div>
+ </div>
+</section>
+
+<section id="services" style="padding-top:0">
+ <div class="wrap">
+  <div class="head rv"><h2>What I <span class="gtx">Do</span></h2><p>End-to-end platform support — recovery, verification, brand protection and content production.</p></div>
   <div class="bento">
-   <div class="b-card big rv">
+   <div class="bc wide rv">
     <div>
-     <div class="logo-box sm"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-facebook-xDFOrxPopIfL71jUgPFo1ZIr0DO6Hj.png" alt="Facebook" loading="lazy" decoding="async" /></div>
+     <div class="lg"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-facebook-xDFOrxPopIfL71jUgPFo1ZIr0DO6Hj.png" alt="Facebook" loading="lazy" /></div>
      <h3>Facebook Support &amp; Recovery</h3>
      <p>Disabled account recovery, identity confirmation, locked/checkpoint unlock, page unpublishing appeals, admin &amp; ownership disputes, impersonation reports and monetization setup.</p>
     </div>
     <div class="chips"><i>Recovery</i><i>Verification</i><i>Appeals</i><i>Brand Rights</i><i>Ads &amp; Billing</i><i>Monetization</i></div>
    </div>
-   <div class="b-card rv"><div class="logo-box st2"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-instagram-EMmuVnRvoXGVAJTy4HCo7WwxnkPhre.png" alt="Instagram" loading="lazy" decoding="async" /></div><h3>Instagram</h3><p>Disabled/restricted account appeals, Meta Verified, impersonation &amp; IP takedowns, creator setup and Reels production.</p></div>
-   <div class="b-card rv"><div class="logo-box st3"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-youtube-r0yitb0bRI6n6Rn74tn3QU6enyk6Tu.png" alt="YouTube" loading="lazy" decoding="async" /></div><h3>YouTube</h3><p>Channel recovery, strike &amp; suspension appeals, Content ID disputes and YPP monetization review guidance.</p></div>
-   <div class="b-card rv"><div class="logo-box st4"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-x-KI3cRVIxfnSUp2uVTcmspEvosxCrKN.png" alt="X" loading="lazy" decoding="async" /></div><h3>X (Twitter)</h3><p>Locked, limited, suspended or compromised X accounts — official recovery and appeal routes, step by step.</p></div>
-   <div class="b-card big rv">
+   <div class="bc rv"><div class="lg"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-instagram-EMmuVnRvoXGVAJTy4HCo7WwxnkPhre.png" alt="Instagram" loading="lazy" /></div><h3>Instagram</h3><p>Disabled/restricted account appeals, Meta Verified, impersonation &amp; IP takedowns, creator setup and Reels production.</p></div>
+   <div class="bc rv"><div class="lg"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-youtube-r0yitb0bRI6n6Rn74tn3QU6enyk6Tu.png" alt="YouTube" loading="lazy" /></div><h3>YouTube</h3><p>Channel recovery, strike &amp; suspension appeals, Content ID disputes and YPP monetization review guidance.</p></div>
+   <div class="bc rv"><div class="lg"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-x-KI3cRVIxfnSUp2uVTcmspEvosxCrKN.png" alt="X" loading="lazy" /></div><h3>X (Twitter)</h3><p>Locked, limited, suspended or compromised X accounts — official recovery and appeal routes, step by step.</p></div>
+   <div class="bc wide rv">
     <div>
      <h3>Brand Rights &amp; Protection</h3>
      <p>Trademark registry prep, counterfeit and logo-misuse reports, Rights Manager takedowns and repeat-infringer protection for creators and businesses.</p>
     </div>
-    <img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/registry-verify-7ZbUgn0G5oGEYWf5upODMmhoXC6YQs.jpg" alt="Brand protection" style="width:100%;border-radius:16px;aspect-ratio:16/10;object-fit:cover" loading="lazy" decoding="async" />
+    <img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/registry-verify-7ZbUgn0G5oGEYWf5upODMmhoXC6YQs.jpg" alt="Brand protection" style="width:100%;border-radius:16px;aspect-ratio:16/10;object-fit:cover" loading="lazy" />
    </div>
   </div>
  </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills" style="padding-top:0">
  <div class="wrap">
-  <div class="sec-head rv"><h2>Tools &amp; <span class="grad-txt">Skills</span></h2><p>The stack behind every recovery case and creative asset.</p></div>
-  <div class="skills">
-   <div class="sk rv"><div class="logo-box"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-adobe-79IhatexgUT5Io82FMEwki7y6rJg17.png" alt="Adobe Illustrator" loading="lazy" decoding="async" /></div><b>Adobe Illustrator</b></div>
-   <div class="sk rv"><div class="logo-box st2"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-ps-IimKKbqtavR6BxVKa91YUKbaVBOZrN.png" alt="Photoshop" loading="lazy" decoding="async" /></div><b>Photoshop</b></div>
-   <div class="sk rv"><div class="logo-box st3"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-ai-Tda0W8q2J8veZ8zSCn4oohNUNYeCh2.png" alt="AI Generation" loading="lazy" decoding="async" /></div><b>AI Generation</b></div>
-   <div class="sk rv"><div class="logo-box st4"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-wordpress-aoQYrNuqmTkMboA2yXYpsE5Vn78nC6.png" alt="WordPress" loading="lazy" decoding="async" /></div><b>WordPress</b></div>
-   <div class="sk rv"><div class="logo-box st5"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-meta-1vMHUCgUwCd83zALjUvrG39r7OlyHt.png" alt="Meta Systems" loading="lazy" decoding="async" /></div><b>Meta Systems</b></div>
+  <div class="head rv"><h2>Tools &amp; <span class="gtx">Skills</span></h2><p>The stack behind every recovery case and creative asset.</p></div>
+  <div class="skl">
+   <div class="sk rv"><div class="lg"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-adobe-79IhatexgUT5Io82FMEwki7y6rJg17.png" alt="Adobe Illustrator" loading="lazy" /></div><b>Adobe Illustrator</b></div>
+   <div class="sk rv"><div class="lg"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-ps-IimKKbqtavR6BxVKa91YUKbaVBOZrN.png" alt="Photoshop" loading="lazy" /></div><b>Photoshop</b></div>
+   <div class="sk rv"><div class="lg"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-ai-Tda0W8q2J8veZ8zSCn4oohNUNYeCh2.png" alt="AI Generation" loading="lazy" /></div><b>AI Generation</b></div>
+   <div class="sk rv"><div class="lg"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-wordpress-aoQYrNuqmTkMboA2yXYpsE5Vn78nC6.png" alt="WordPress" loading="lazy" /></div><b>WordPress</b></div>
+   <div class="sk rv"><div class="lg"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/svc-meta-1vMHUCgUwCd83zALjUvrG39r7OlyHt.png" alt="Meta Systems" loading="lazy" /></div><b>Meta Systems</b></div>
   </div>
  </div>
 </section>
 
-<!-- ASSETS -->
 <section id="assets">
  <div class="wrap">
-  <div class="sec-head rv"><h2>Premium <span class="grad-txt">Stock Assets</span></h2><p>Original vector families, icon packs, seasonal bundles and motion-ready artwork.</p></div>
+  <div class="head rv"><h2>Premium <span class="gtx">Stock Assets</span></h2><p>Original vector families, icon packs, seasonal bundles and motion-ready artwork.</p></div>
   <div class="gal">
-   <div class="g-item wide rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/blue-purple-wave-eWlRismqU7NTDCAGsxROwLOO5KDmEU.jpg" alt="" loading="lazy" decoding="async" /><div class="cap">Blue–Purple Wave Backgrounds</div></div>
-   <div class="g-item rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/icon-families-kiMJFuuZP6Q2OFKmfCU8ZUeFvJEEMu.jpg" alt="" loading="lazy" decoding="async" /><div class="cap">Icon Families</div></div>
-   <div class="g-item rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/seasonal-packs-TaczotBWtoYsx9Rw203Gphl70PfKXs.jpg" alt="" loading="lazy" decoding="async" /><div class="cap">Seasonal Packs</div></div>
-   <div class="g-item wide rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/avatar-concepts-zufpZtzLKTrEepmJAGlsUuz1GWk4hU.jpg" alt="" loading="lazy" decoding="async" /><div class="cap">Avatar Concepts</div></div>
-   <div class="g-item rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/crime-line-JP5XhVezxyj1gQ0ZnLjZE9Yvp7zYl5.jpg" alt="" loading="lazy" decoding="async" /><div class="cap">Crime-Line Series</div></div>
-   <div class="g-item rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/fb-help-community-0uYIu6TMZqppeR5wZHuItdZ5uPJJs0.jpg" alt="" loading="lazy" decoding="async" /><div class="cap">FB Help Community Art</div></div>
+   <div class="gi w2 rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/blue-purple-wave-eWlRismqU7NTDCAGsxROwLOO5KDmEU.jpg" alt="Blue purple wave backgrounds" loading="lazy" /><div class="cap">Blue–Purple Wave Backgrounds</div></div>
+   <div class="gi rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/icon-families-kiMJFuuZP6Q2OFKmfCU8ZUeFvJEEMu.jpg" alt="Icon families" loading="lazy" /><div class="cap">Icon Families</div></div>
+   <div class="gi rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/seasonal-packs-TaczotBWtoYsx9Rw203Gphl70PfKXs.jpg" alt="Seasonal packs" loading="lazy" /><div class="cap">Seasonal Packs</div></div>
+   <div class="gi w2 rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/avatar-concepts-zufpZtzLKTrEepmJAGlsUuz1GWk4hU.jpg" alt="Avatar concepts" loading="lazy" /><div class="cap">Avatar Concepts</div></div>
+   <div class="gi rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/crime-line-JP5XhVezxyj1gQ0ZnLjZE9Yvp7zYl5.jpg" alt="Crime line series" loading="lazy" /><div class="cap">Crime-Line Series</div></div>
+   <div class="gi rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/fb-help-community-0uYIu6TMZqppeR5wZHuItdZ5uPJJs0.jpg" alt="FB help community art" loading="lazy" /><div class="cap">FB Help Community Art</div></div>
   </div>
  </div>
 </section>
 
-<!-- JOURNEY -->
 <section id="journey" style="padding-top:0">
  <div class="wrap">
-  <div class="sec-head rv"><h2>My <span class="grad-txt">Journey</span></h2><p>From design tools to Meta platform support — every stop added a skill.</p></div>
-  <div class="tl">
-   <div class="j-card rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/j-adobe-f5qhFL9ctrgfcTf98WQVA2Kx9KkCSz.png" alt="" loading="lazy" decoding="async" /><div class="j-body"><b>Design Foundations</b><span>Adobe Illustrator &amp; Photoshop mastery</span></div></div>
-   <div class="j-card rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/j-meta-LB8DVUaZU4W5q3KVpYSQLpM7vIv55J.png" alt="" loading="lazy" decoding="async" /><div class="j-body"><b>Meta Platform Support</b><span>Account recovery &amp; verification deep-dive</span></div></div>
-   <div class="j-card rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/j-carmichael-IbQybxSPn5UnspK2PHqc1zzSdCqAmr.png" alt="" loading="lazy" decoding="async" /><div class="j-body"><b>Global Collaboration</b><span>Working with international clients</span></div></div>
-   <div class="j-card rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/j-iau-Ty9LZUJuO9RIyX9ptN2QEK3bm3lxTD.png" alt="" loading="lazy" decoding="async" /><div class="j-body"><b>Organizations</b><span>Supporting agencies &amp; institutions</span></div></div>
-   <div class="j-card rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/j-dental-3YDp59qYPq94UCauOKNeOtMTS3magN.png" alt="" loading="lazy" decoding="async" /><div class="j-body"><b>Business Branding</b><span>Local business creative solutions</span></div></div>
+  <div class="head rv"><h2>My <span class="gtx">Journey</span></h2><p>From design tools to Meta platform support — every stop added a skill.</p></div>
+  <div class="jr">
+   <div class="jc rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/j-adobe-f5qhFL9ctrgfcTf98WQVA2Kx9KkCSz.png" alt="Design foundations" loading="lazy" /><div class="jb"><b>Design Foundations</b><span>Adobe Illustrator &amp; Photoshop mastery</span></div></div>
+   <div class="jc rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/j-meta-LB8DVUaZU4W5q3KVpYSQLpM7vIv55J.png" alt="Meta platform support" loading="lazy" /><div class="jb"><b>Meta Platform Support</b><span>Account recovery &amp; verification deep-dive</span></div></div>
+   <div class="jc rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/j-carmichael-IbQybxSPn5UnspK2PHqc1zzSdCqAmr.png" alt="Global collaboration" loading="lazy" /><div class="jb"><b>Global Collaboration</b><span>Working with international clients</span></div></div>
+   <div class="jc rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/j-iau-Ty9LZUJuO9RIyX9ptN2QEK3bm3lxTD.png" alt="Organizations" loading="lazy" /><div class="jb"><b>Organizations</b><span>Supporting agencies &amp; institutions</span></div></div>
+   <div class="jc rv"><img src="https://sfzwjpmfnxvogtdk.public.blob.vercel-storage.com/ob/marzan-portfolio-v9/j-dental-3YDp59qYPq94UCauOKNeOtMTS3magN.png" alt="Business branding" loading="lazy" /><div class="jb"><b>Business Branding</b><span>Local business creative solutions</span></div></div>
   </div>
  </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
- <div class="wrap c-grid">
+<section class="ct" id="contact">
+ <div class="wrap cg">
   <div class="rv">
-   <h2>Let's <span class="grad-txt">Connect</span></h2>
+   <h2>Let's <span class="gtx">Connect</span></h2>
    <p>Account locked? Page unpublished? Need premium assets? Message me — I reply fast on WhatsApp.</p>
    <div style="display:flex;gap:14px;flex-wrap:wrap">
     <a class="btn btn-p" href="https://wa.me/8801318040178?text=Hi%20Marzan%2C%20I%20found%20your%20portfolio%20and%20I" target="_blank" rel="noopener">WhatsApp</a>
     <a class="btn btn-g" href="https://bpcyberspace.vercel.app/" target="_blank" rel="noopener">Visit BPCS ↗</a>
    </div>
   </div>
-  <div class="c-list rv">
-   <a class="c-item" href="mailto:sk31823428@gmail.com"><span class="ic">✉️</span><span><small>Email</small><b>sk31823428@gmail.com</b></span></a>
-   <a class="c-item" href="https://wa.me/8801318040178" target="_blank" rel="noopener"><span class="ic">📞</span><span><small>Phone / WhatsApp</small><b>+880 1318-040178</b></span></a>
-   <a class="c-item" href="https://www.facebook.com/mm1531" target="_blank" rel="noopener"><span class="ic">📘</span><span><small>Facebook</small><b>fb.com/mm1531</b></span></a>
-   <a class="c-item" href="https://bpcyberspace.vercel.app/" target="_blank" rel="noopener"><span class="ic">⚡</span><span><small>Organization</small><b>Black Panther Cyber Space (BPCS)</b></span></a>
+  <div class="cl rv">
+   <a class="ci" href="mailto:sk31823428@gmail.com"><span class="ic">✉️</span><span><small>Email</small><b>sk31823428@gmail.com</b></span></a>
+   <a class="ci" href="https://wa.me/8801318040178" target="_blank" rel="noopener"><span class="ic">📞</span><span><small>Phone / WhatsApp</small><b>+880 1318-040178</b></span></a>
+   <a class="ci" href="https://www.facebook.com/mm1531" target="_blank" rel="noopener"><span class="ic">📘</span><span><small>Facebook</small><b>fb.com/mm1531</b></span></a>
+   <a class="ci" href="https://bpcyberspace.vercel.app/" target="_blank" rel="noopener"><span class="ic">⚡</span><span><small>Organization</small><b>Black Panther Cyber Space (BPCS)</b></span></a>
   </div>
  </div>
 </section>
@@ -345,48 +348,24 @@ footer a{color:var(--cy);text-decoration:none}
 
 <script>
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-/* nav */
 const b=document.getElementById('burger'),l=document.getElementById('navLinks');
 b.onclick=()=>{l.classList.toggle('open');b.classList.toggle('x')};
 l.querySelectorAll('a').forEach(a=>a.onclick=()=>{l.classList.remove('open');b.classList.remove('x')});
-
-/* SYS-1: entrance reveal */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
-
-/* scroll progress bar */
 const prog=document.getElementById('prog');
-addEventListener('scroll',()=>{const h=document.documentElement;
- prog.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
-
-/* active nav link */
+addEventListener('scroll',()=>{const h=document.documentElement;prog.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
 const sec=[...document.querySelectorAll('section[id],header[id]')];
 addEventListener('scroll',()=>{let c=sec.find(s=>s.getBoundingClientRect().top<120)||sec[0];
  document.querySelectorAll('.links a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+c.id))},{passive:true});
-
-/* SYS-4a: animated counters */
-const cObs=new IntersectionObserver(es=>es.forEach(e=>{
- if(e.isIntersecting&&!e.target.dataset.done){e.target.dataset.done=1;cObs.unobserve(e.target);
-  const el=e.target,end=parseFloat(el.dataset.count),suf=el.dataset.suffix||'';
-  if(RM){el.textContent=(end%1?end.toFixed(1):end)+suf;return}
-  const t0=performance.now();
-  const tick=n=>{const p=Math.min((n-t0)/1400,1),k=1-Math.pow(1-p,3),v=end*k;
-   el.textContent=(end%1?v.toFixed(1):Math.round(v))+suf;
-   if(p<1)requestAnimationFrame(tick)};
-  requestAnimationFrame(tick)}}),{threshold:.6});
-document.querySelectorAll('[data-count]').forEach(el=>cObs.observe(el));
-
-/* SYS-4b: typewriter roles */
 const roles=["Digital Creator","Meta Platform Support Specialist","Account Recovery Expert","Brand Protection Officer","Stock Asset Designer"];
 if(RM){document.getElementById('typed').textContent=roles[0]}
-else{let ri=0,ci=0,del=false;const tEl=document.getElementById('typed');
- (function type(){const w=roles[ri];tEl.textContent=w.slice(0,ci);
+else{let ri=0,ci=0,del=false;const t=document.getElementById('typed');
+ (function type(){const w=roles[ri];t.textContent=w.slice(0,ci);
   if(!del&&ci<w.length){ci++;setTimeout(type,65)}
   else if(!del){del=true;setTimeout(type,1900)}
   else if(ci>0){ci--;setTimeout(type,32)}
   else{del=false;ri=(ri+1)%roles.length;setTimeout(type,150)}})()}
-
 document.getElementById('yr').textContent=new Date().getFullYear();
 </script>
 </body>
